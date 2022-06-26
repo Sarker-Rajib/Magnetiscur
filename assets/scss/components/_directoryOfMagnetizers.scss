@@ -1,0 +1,33 @@
+.Directory-of-Magnetizers{
+
+   .section-heading{
+      font-family: "MyriadproRegular";
+      font-size: 25px;
+      padding: 18px 0;
+   }
+
+   p{
+      font-family: "MyriadproRegular";
+      font-size: 15px;
+   }
+
+   ul{
+      li{
+         position: relative;
+         padding-left: 20px;
+         font-family: "MyriadproRegular";
+         font-size: 15px;
+
+         
+         &::after{
+            content: "";
+            height: 15px;
+            width: 10px;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            background: url(../images/locator.png) no-repeat center center/contain;
+         }
+      }
+   }
+}

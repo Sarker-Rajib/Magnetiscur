@@ -1,0 +1,66 @@
+.magnetizer-banner{
+   padding: 35px 0;
+   
+   h1{
+      font-family: "MyriadproRegular";
+      font-size: 25px;
+      font-weight: bold;
+   }
+
+   p{
+      font-family: "MyriadproRegular";
+      font-size: 15px;
+      padding: 20px 0;
+
+      @media(min-width: 1200px){
+         white-space: pre-line;
+      }
+   }
+
+   ul{
+      padding: 15px 0 25px 85px;
+
+      li{
+         font-family: "MyriadproRegular";
+         font-size: 15px;
+         font-weight: bold;
+         position: relative;
+         padding: 0 0 15px 15px;
+
+         &::after{
+            content:"";
+            position: absolute;
+            right: 100%;
+            top: 0;
+            height: 22px;
+            width: 22px;
+            background: url(../images/pro-account/success.png) no-repeat center center/contain;
+         }
+      }
+   }
+
+   .colored-line{
+      .line{
+         height: 3px;
+         width: 100%;
+         display: block;
+         margin-bottom: 3px;
+
+         &.first{
+            background: #9cbbcd;
+         }
+
+         &.second{
+            background: #abd2e9;
+         }
+
+         &.third{
+            background: #a5cfb2;
+         }
+
+         &.fourth{
+            background: #dae9bf;
+         }
+      }
+   }
+}

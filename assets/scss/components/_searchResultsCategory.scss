@@ -1,0 +1,113 @@
+.category-search{
+   .section-heading{
+      font-family: "MyriadproRegular";
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 0;
+   }
+
+
+   .main-contents{
+      padding: 40px 0;
+
+      .service-persons{
+
+         .person-card{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            border: 1px dashed #000;
+            overflow: hidden;
+            position: relative;
+
+            .availability{
+               position: absolute;
+               font-family: "MyriadproRegular";
+               font-size: 12px;
+               padding: 2px 45px;
+               text-transform: uppercase;
+               color: #fff;
+
+
+               &.offline{
+                  background: #000; 
+                  transform: rotate(45deg);
+                  right: -40px;
+                  top: 9px;
+               }
+
+               &.online{
+                  background: #605e9d;
+                  transform: rotate(45deg);
+                  right: -40px;
+                  top: 10px;
+               }
+            }
+
+            .image{
+               img{
+                  width: 100%;
+                  max-width: 145px;
+               }
+            }
+
+            .text{
+               padding: 10px 30px 10px 15px;
+
+               .text-header{
+                  h3{
+                     font-family: "MyriadproRegular";
+                     font-size: 20px;
+                     font-weight: bold;
+                     padding-bottom: 5px;
+                     text-align: center;
+
+                     span{
+                        margin-left: 5px;
+                     }
+                  }
+
+                  .rating{
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     
+                     p{
+                        font-family: "MyriadproRegular";
+                        font-size: 15px;
+                        padding: 5px 0;
+                     }
+                  }
+               }
+
+               .text-body{
+                  padding: 5px 0;
+                  i, img{
+                     width: 100%;
+                     max-width: 15px;
+                  }
+                  .location{
+                     font-family: "MyriadproRegular";
+                     font-size: 13px;
+                  }
+
+                  .fee{
+                     font-family: "MyriadproRegular";
+                     font-size: 13px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .section-bottom{
+      padding-bottom: 50px;
+      
+      p{
+         font-family: "MyriadproRegular";
+         font-size: 15px;
+      }
+   }
+}

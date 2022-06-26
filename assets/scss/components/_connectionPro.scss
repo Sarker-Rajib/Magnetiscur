@@ -1,0 +1,45 @@
+.connection-pro{
+   padding: 50px 0;
+
+   .section-header{
+      padding-bottom: 25px;
+
+      h1{
+         font-family: "MyriadproRegular";
+         font-size: 25px;
+      }
+   }
+
+   .account-connection-info{
+      border: 1px solid #cccbd2;
+
+      .info-header{
+         background: #4abcf5;
+
+         h3{
+            text-align: center;
+            font-family: "MyriadproRegular";
+            font-size: 15px;
+            padding: 15px 0; 
+            color: #fff;
+         }
+      }
+
+      .info-body{
+         padding: 25px;
+
+         p{
+         font-family: "MyriadproRegular";
+         font-size: 15px;
+         padding-bottom: 15px;
+         }
+      }
+
+      // .g-recaptcha {
+        
+      //    transform: scale(0.77);
+      //    transform-origin:0 0;
+         
+      // }
+   }
+}

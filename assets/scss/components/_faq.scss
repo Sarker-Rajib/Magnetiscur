@@ -1,0 +1,31 @@
+.faq{
+   font-family: "MyriadproRegular";
+   font-size: 25px;
+   padding-top: 20px;
+
+   .accordion{
+      padding: 25px 0;
+
+      .accordion-item{
+         border-radius: 0px;
+
+         .accordion-header{
+            background: #32314c;
+            
+            .accordion-button{
+               background: #32314c;
+               color: #fff;
+               font-family: "MyriadproRegular";
+               font-size: 15px;
+            }
+         }
+
+         .accordion-body{
+            p{
+               font-family: "MyriadproRegular";
+               font-size: 15px;
+            }
+         }
+      }
+   }
+}
