@@ -8,7 +8,6 @@
   <link rel='shortcut icon' href='assets/images/logo-black.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -61,7 +60,7 @@
       </div>
     </nav>
     <div class="header-bottom">
-      <h2>Home &#62; Pro <span>Account Creation</span></h2>
+      <h2>Home &#62; <span class="d-inline-block d-xl-none">Login</span> Pro <span class="d-none d-xl-inline-block">Account Creation</span></h2>
     </div>
   </header>  
   <!-- header -->
@@ -88,7 +87,10 @@
                     <input class="form-control form-control" type="email" placeholder="Email">
                   </div>
                   <div class="col-6">
-                    <input type="password" class="form-control form-control" placeholder="************">
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control" placeholder="************">
+                      <span class="input-group-text"><i class="far fa-eye eye"></i></span>
+                    </div>
                   </div>
                 </div>
                 <div class="col-12 pt-4 d-flex justify-content-center">
@@ -155,14 +157,14 @@
             </div>
           </div>
 
-          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3">
+          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3 px-3 px-md-0">
             <div class="info">
               <div class="header text-center">
                 <h5>Informations</h5>
                 <img class="img-fluid" src="assets/images/line.png" alt="line">
               </div>
               <div class="content">
-                <ul class="ps-0 ps-xl-4">
+                <ul>
                   <li>CGV/CGU</li>
                   <li>Mentions Légales</li>
                   <li>A propos</li>
@@ -173,7 +175,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3 px-0">
+          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3 px-3 px-md-0">
             <div class="notes">
               <div class="header text-center">
                 <h5>Notes Importantes</h5>
@@ -194,6 +196,7 @@
         </div>
       </div>
     </div>
+
     <div class="footer-bottom py-2">
       <div class="container">
         <div class="copyright d-flex justify-content-center align-items-center">
@@ -207,8 +210,8 @@
 
 
   <!-- script -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js" async defer></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <!-- end -->
 </body>
 </html>

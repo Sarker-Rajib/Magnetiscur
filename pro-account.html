@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Magnétiseur | Results </title>
+  <title> Magnétiseur | Pro Account </title>
   <link rel='shortcut icon' href='assets/images/logo-black.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -60,17 +60,37 @@
         </div>
       </div>
     </nav>
+
     <div class="header-bottom">
-      <h2>Home &#62; Pro <span>Account Creation</span></h2>
+      <div class="container">
+        <div class="row align-items-center py-2">
+          <div class="col">      
+            <a href="#" class="btn direction-btn"><i class="far fa-arrow-left"></i><span class="d-none d-md-inline-block">Back to Home</span></a>
+          </div>
+          <div class="col">
+            <h2>Home &#62; Pro <span>Account Creation</span></h2>
+          </div>
+          <div class="col text-end">
+            <a class="btn direction-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-plus"></i><span class="d-none d-md-inline-block">New Search</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-navigation collapse" id="collapseExample">
+        <div class="py-2">
+          <h2>Trouvez un Magnétiseur proche de chez vous</h2>
+        </div>
+      </div>
     </div>
   </header>  
   <!-- header -->
 
+
   <!--  -->
-  <section class="magnetizer-banner d-none">
+  <section class="magnetizer-banner">
      <div class="container">
          <div class="row">
-            <div class="col-md-6">
+            <div class="col-xl-6 pb-4 pb-xl-0">
             <h1 class="text-center">Vous êtes Magnétiseur? Guérisseur? Rebouteux?</h1>
             <p class="text-center">Réjoignez notre annuaire réservé aux Magnetiseurs, et gagnez de la visibilité 
                pour développez votre clientèle! Rejoignez notre communauté! </p>
@@ -85,7 +105,7 @@
                <a href="#" class="btn btn-red medium m-auto">Je m’inscris</a>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-xl-6 d-none d-xl-block">
                <div class="image text-center">
                   <img src="assets/images/pro-account/colored-tree.png" alt="colored-tree" class="img-fluid">
                </div>
@@ -315,7 +335,7 @@
    
            <div class="check-out-price px-5">
              <ul>
-               <li><p class="pack color-text-sky">12 MOIS PREMIUM</p>
+               <li><p class="pack color-text-sky">12 MOIS PREMIUM <i class="fas fa-edit ms-3"></i></p>
                   <p class="price">72.00 <span class="color-text-sky">€</span></p>
                </li>
                <li><p class="charge">SERVICE CHARGE</p>
@@ -329,8 +349,8 @@
            
            <form>
                <div class="check-out-option px-2 px-md-5">
-                  <div class="form-check pb-2">
-                     <input class="form-check-input" type="radio" name="card-pay" id="card-pay2" checked>
+                  <div class="form-check pb-2 d-flex align-items-center">
+                     <input class="form-check-input me-2 mb-1" type="radio" name="card-pay" id="card-pay2" checked>
                      <label class="form-check-label" for="card-pay2">
                         Credit or Debit Card
                      </label>
@@ -372,7 +392,7 @@
                   </div>
 
                   <div class="form-check ms-0 ms-md-5">
-                  <input class="form-check-input me-2" type="checkbox"  id="two" checked>
+                  <input class="form-check-input me-2" type="checkbox"  id="two">
                   <label class="form-check-label" for="two">
                      I have read and I agree to respect the code of ethics of Magnetiseur France 
                   </label>
@@ -438,14 +458,14 @@
             </div>
           </div>
 
-          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3">
+          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3 px-3 px-md-0">
             <div class="info">
               <div class="header text-center">
                 <h5>Informations</h5>
                 <img class="img-fluid" src="assets/images/line.png" alt="line">
               </div>
               <div class="content">
-                <ul class="ps-0 ps-xl-4">
+                <ul>
                   <li>CGV/CGU</li>
                   <li>Mentions Légales</li>
                   <li>A propos</li>
@@ -456,7 +476,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3 px-0">
+          <div class="col-md-6 pt-4 pt-xl-0 col-xl-3 px-3 px-md-0">
             <div class="notes">
               <div class="header text-center">
                 <h5>Notes Importantes</h5>
@@ -477,6 +497,7 @@
         </div>
       </div>
     </div>
+
     <div class="footer-bottom py-2">
       <div class="container">
         <div class="copyright d-flex justify-content-center align-items-center">
