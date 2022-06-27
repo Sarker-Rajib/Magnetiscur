@@ -6,21 +6,72 @@
    border-radius: 0;
 }
 
+.button-ash-black{
+   background: #32314c;
+   color: #fff;
+   border-radius: 0;
+
+   &:hover{
+      color: #ff9902;
+   }
+}
+
+.btn-yellow{
+   background: #ff9902;
+   color: #fff;
+   border-radius: 0;
+
+   &:hover{
+      color: rgb(0, 0, 0);
+   }
+}
+
+.btn-white{
+   background: #fff;
+   color: #000;
+   font-size: 15px;
+   width: 100%;
+   max-width: 85px;
+   margin-bottom: 5px;
+   border-radius: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.btn-white-rounded{
+   background: #fff;
+   color: #000;
+   font-size: 15px;
+   width: 100%;
+   margin-bottom: 5px;
+   border-radius: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 90px;
+   border-radius: 25px;
+}
+
 .btn-red{
    background: $color-red;
    color: #fff;
    border-radius: 0;
-   display: block;
    font-family: "MyriadproRegular";
    font-size: 20px;
-   width: 100%;
+  
    
    &.medium{
+      display: block;
+      width: 100%;
       max-width: 280px;
       padding: 12px 0;
    }
    
    &.large{
+      display: block;
+      width: 100%;
       max-width: 350px;
       padding: 5px 0;
    }

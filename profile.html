@@ -14,19 +14,68 @@
 
 <body>
   <!-- header -->
+  <header class="header">
+   <nav class="navbar navbar-expand-xl navbar-light">
+     <div class="container">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/brand-icon.png" alt="image"></a>
+       <div class="collapse mobile-nav navbar-collapse" id="nav-toggle">
+         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="#">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">A propos</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">FAQ</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Blog</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Contact</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link pro" href="#">Pro Connexion</a>
+           </li>
+       </div>
 
-  <!-- header -->
+       <div class="register">
+         <a href="#">
+           <div class="content d-flex">
+             <div class="image pe-0 pe-md-2">
+               <img src="assets/images/login/user.png" alt="user">
+             </div>
+             <div class="text text-center d-none d-md-block">
+               <p>Are you a Therapist?
+                 <br>
+                 <span>Register now!</span>
+               </p>
+             </div>
+           </div>
+         </a>
+       </div>
+     </div>
+   </nav>
+   <div class="header-bottom">
+     <h2>Home &#62; Pro <span>Account Creation</span></h2>
+   </div>
+ </header>  
+ <!-- header -->
 
   <div class="profile">
-   <div class="container">
+   <div class="container px-0">
       <div class="row">
-         <div class="col-2">
-            <div class="profile-nav">
-               <div class="top-section">
-                  <div class="section-header">
-                     <h3>Séverine Marthal <span><img src="assets/images/success.png" alt="asssa"></span></h3>
+         <div class="col-md-4 col-xl-2 px-0">
+            <div class="profile-nav h-100">
+               <div class="top-section text-center">
+                  <div class="section-header text-center">
+                     <h3 class="title">Séverine Marthal <span><img class="img-fluid ms-1" src="assets/images/success.png" alt="asssa"></span></h3>
                   </div>
-                  <div class="rating">
+                  <div class="rating d-flex justify-content-center">
                      <div class="stars">
                         <span><img src="assets/images/results/star.png" alt="star"></span>
                         <span><img src="assets/images/results/star.png" alt="star"></span>
@@ -34,42 +83,62 @@
                         <span><img src="assets/images/results/star.png" alt="star"></span>
                         <span><img src="assets/images/results/star.png" alt="star"></span>
                      </div>
-                     <p>15 reviews</p>
+                     <p class="f-mr-15">15 reviews</p>
                   </div>
-                  <img src="assets/images/results/carolie.png" alt="img">
+                  <img class="img-fluid py-2 my-1" src="assets/images/results/severine.png" alt="img">
                </div>
                <div class="botttom-section">
                   <div class="disciplines">
-                     <h3>My Disciplines</h3>
-                     <div class="item">
-                        <a href="#" class="btn">Magnetizor </a>
-                        <a href="#" class="btn">Reiki</a>
-                        <a href="#" class="btn">Healer</a>
-                        <a href="#" class="btn">Hynosis</a>
+                     <h3 class="section-head f-mr-15 text-center">My Disciplines</h3>
+                     <div class="item my-3">
+                        <div class="row gy-1 gx-0">
+                           <div class="col-6 p-0 d-flex justify-content-center"><a href="#" class="btn btn-white">Magnetizor</a></div>
+                           <div class="col-6 p-0 d-flex justify-content-center">   <a href="#" class="btn btn-white">Reiki</a></div>
+                           <div class="col-6 p-0 d-flex justify-content-center">      <a href="#" class="btn btn-white">Healer</a></div>
+                           <div class="col-6 p-0 d-flex justify-content-center">       <a href="#" class="btn btn-white">Hynosis</a></div>
+                        </div>
+                        
+                     
+                  
+                 
                      </div>
                   </div>
                   <div class="symptom">
-                     <h3>Symptoms I treat:</h3>
-                     <div class="item">
-                        <a href="#" class="btn">Symptom #1</a>
-                        <a href="#" class="btn">Symptom #1</a>
-                        <a href="#" class="btn">Symptom #1</a>
-                        <a href="#" class="btn">Symptom #1</a>
-                        <a href="#" class="btn">Symptom #1</a>
-                        <a href="#" class="btn">Symptom #1</a>
+                     <h3 class="section-head text-center f-mr-15">Symptoms I treat:</h3>
+                     <div class="item my-3">
+                        <div class="row gx-0 gy-1">
+                           <div class="col-6 px-0 d-flex justify-content-center">
+                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                           </div>
+                           <div class="col-6 px-0 d-flex justify-content-center">
+                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                           </div>
+                           <div class="col-6 px-0 d-flex justify-content-center">
+                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                           </div>
+                           <div class="col-6 px-0 d-flex justify-content-center">
+                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                           </div>
+                           <div class="col-6 px-0 d-flex justify-content-center">
+                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                           </div>
+                           <div class="col-6 px-0 d-flex justify-content-center">
+                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
 
-         <div class="col-8">
+         <div class="col-md-8">
             <div class="container">
                <div class="short-details">
-                  <h1 class="section-header">
+                  <h1 class="section-header f-mr-25 text-center py-3">
                      Séverine Marthal Magnétiseur à Caen
                   </h1>
-                  <p>Annuaire entretprise vous permet d’entrer en contact directement auprès de 30 000 des médecines alternatives 
+                  <p class="f-mr-15">Annuaire entretprise vous permet d’entrer en contact directement auprès de 30 000 des médecines alternatives 
                      qui exercent en France, en Belgique et au Luxembourg. Annuaire entretprise vous permet d’entrer en contact 
                      directement auprès de 30 000 des médecines alternatives qui exercent en France, en Belgique et au 
                      Luxembourg.Annuaire entretprise vous permet d’entrer en contact directement auprès de 30 000 des médecines 
@@ -77,11 +146,13 @@
                      contact directement auprès de 30 000 des médecines alternatives qui exercent en France, en Belgique et au 
                      Luxembourg. 
                   </p>
-                  <a href="#" class="btn">+ See more</a>
+                  <div class="text-center py-3">
+                     <a href="#" class="btn button-ash-black">+ See more</a>
+                  </div>
                </div>
 
-               <div class="contact-location">
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+               <div class="contact-location py-4">
+                  <ul class="nav nav-pills justify-content-between" id="pills-tab" role="tablist">
                      <li class="nav-item" role="presentation">
                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Caen</button>
                      </li>
@@ -92,47 +163,156 @@
                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Online</button>
                      </li>
                      <li class="nav-item" role="presentation">
-                       <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-fourth" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Home</button>
+                       <button class="nav-link" id="pills-forth-tab" data-bs-toggle="pill" data-bs-target="#pills-forth" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Home</button>
                      </li>
-                   </ul>
-                   <div class="tab-content" id="pills-tabContent">
+                  </ul>
+
+                  <div class="tab-content" id="pills-tabContent">
                      
                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <p class="location"><i class="fas fa-map-marker-alt"></i>10 rue pasteur, 14000 Caen</p>
-
+                        <p class="location pb-2"><i class="me-1 fas fa-map-marker-alt"></i>10 rue pasteur, 14000 Caen</p>
                         <div class="row">
-                           <div class="col-md-6">
+                           <div class="col-xl-6 ps-1">
                               <table class="table">
                                  <tbody>
                                    <tr>
-                                     <th scope="row">Magnetizor</th>
+                                     <th><span class="dot">&#183;</span>Magnetizor</th>
                                      <td>50€ / session</td>
                                      <td>Duration: 45min</td>
                                    </tr>
                                    <tr>
-                                     <th scope="row">Healer</th>
+                                     <th><span class="dot">&#183;</span>Healer</th>
                                      <td>50€ / session</td>
                                      <td>Duration: 45min</td>
                                    </tr>
                                  </tbody>
                               </table>
 
-                              <a href="#" class="btn">Send Mail</a>
-                              <a href="#" class="btn">See Number</a>
+                              <div class="pt-3 text-center">
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Send Mail
+                                 </button>
+                                 
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdropmobile">
+                                    See Number
+                                 </button>
+                              </div>
                            </div>
-                           <div class="col-md-6">
-                              <div class="map">
-                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.8697741922574!2d-0.36974888413791673!3d49.18405768567431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bf97485ddd%3A0xbd635e6b445e544c!2s10%20Rue%20Pasteur%2C%2014000%20Caen%2C%20France!5e0!3m2!1sen!2sbd!4v1656267975833!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           <div class="col-xl-6 pt-3 pt-xl-0">
+                              <div class="map w-100">
+                                 <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.8697741922574!2d-0.36974888413791673!3d49.18405768567431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bf97485ddd%3A0xbd635e6b445e544c!2s10%20Rue%20Pasteur%2C%2014000%20Caen%2C%20France!5e0!3m2!1sen!2sbd!4v1656267975833!5m2!1sen!2sbd"></iframe>
                               </div>
                            </div>
                         </div>
                      </div>
 
-                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Second</div>
+                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <p class="location pb-2"><i class="me-1 fas fa-map-marker-alt"></i>10 rue pasteur, 14000 Caen</p>
+                        <div class="row">
+                           <div class="col-xl-6 ps-1">
+                              <table class="table">
+                                 <tbody>
+                                   <tr>
+                                     <th><span class="dot">&#183;</span>Magnetizor</th>
+                                     <td>50€ / session</td>
+                                     <td>Duration: 45min</td>
+                                   </tr>
+                                   <tr>
+                                     <th><span class="dot">&#183;</span>Healer</th>
+                                     <td>50€ / session</td>
+                                     <td>Duration: 45min</td>
+                                   </tr>
+                                 </tbody>
+                              </table>
 
-                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Third</div>
+                              <div class="pt-3 text-center">
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Send Mail
+                                 </button>
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdropmobile">
+                                    See Number
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="col-xl-6 pt-3 pt-xl-0">
+                              <div class="map w-100">
+                                 <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.8697741922574!2d-0.36974888413791673!3d49.18405768567431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bf97485ddd%3A0xbd635e6b445e544c!2s10%20Rue%20Pasteur%2C%2014000%20Caen%2C%20France!5e0!3m2!1sen!2sbd!4v1656267975833!5m2!1sen!2sbd"></iframe>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <p class="location pb-2"><i class="me-1 fas fa-map-marker-alt"></i>10 rue pasteur, 14000 Caen</p>
+                        <div class="row">
+                           <div class="col-xl-6 ps-1">
+                              <table class="table">
+                                 <tbody>
+                                   <tr>
+                                     <th><span class="dot">&#183;</span>Magnetizor</th>
+                                     <td>50€ / session</td>
+                                     <td>Duration: 45min</td>
+                                   </tr>
+                                   <tr>
+                                     <th><span class="dot">&#183;</span>Healer</th>
+                                     <td>50€ / session</td>
+                                     <td>Duration: 45min</td>
+                                   </tr>
+                                 </tbody>
+                              </table>
+
+                              <div class="pt-3 text-center">
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Send Mail
+                                 </button>
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdropmobile">
+                                    See Number
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="col-xl-6 pt-3 pt-xl-0">
+                              <div class="map w-100">
+                                 <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.8697741922574!2d-0.36974888413791673!3d49.18405768567431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bf97485ddd%3A0xbd635e6b445e544c!2s10%20Rue%20Pasteur%2C%2014000%20Caen%2C%20France!5e0!3m2!1sen!2sbd!4v1656267975833!5m2!1sen!2sbd"></iframe>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      
-                     <div class="tab-pane fade" id="pills-fourth" role="tabpanel" aria-labelledby="pills-contact-tab">Fourth</div>
+                     <div class="tab-pane fade" id="pills-forth" role="tabpanel" aria-labelledby="pills-forth-tab">
+                        <p class="location pb-2"><i class="me-1 fas fa-map-marker-alt"></i>10 rue pasteur, 14000 Caen</p>
+                        <div class="row">
+                           <div class="col-xl-6 ps-1">
+                              <table class="table">
+                                 <tbody>
+                                   <tr>
+                                     <th><span class="dot">&#183;</span>Magnetizor</th>
+                                     <td>50€ / session</td>
+                                     <td>Duration: 45min</td>
+                                   </tr>
+                                   <tr>
+                                     <th><span class="dot">&#183;</span>Healer</th>
+                                     <td>50€ / session</td>
+                                     <td>Duration: 45min</td>
+                                   </tr>
+                                 </tbody>
+                              </table>
+
+                              <div class="pt-3 text-center">
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Send Mail
+                                 </button>
+                                 <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdropmobile">
+                                    See Number
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="col-xl-6 pt-3 pt-xl-0">
+                              <div class="map w-100">
+                                 <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.8697741922574!2d-0.36974888413791673!3d49.18405768567431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bf97485ddd%3A0xbd635e6b445e544c!2s10%20Rue%20Pasteur%2C%2014000%20Caen%2C%20France!5e0!3m2!1sen!2sbd!4v1656267975833!5m2!1sen!2sbd"></iframe>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                    </div>
                </div>
 
@@ -145,138 +325,157 @@
                           <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Study</button>
                           <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Information</button>
                         </div>
-                      </nav>
-                      <div class="tab-content" id="nav-tabContent">
+                     </nav>
+
+                     <div class="tab-content" id="nav-tabContent">
                        
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                           <h4>Reviews Customers</h4>
+                           <h4 class="f-mr-20 text-center pb-3">
+                              Reviews Customers
+                              <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                              <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                              <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                              <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                              <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                              <span class="text-muted f-mr-15">15 reviews</span>
+                           </h4>
                            <div class="review-item">
-                              <div class="persion-info d-flex">
-                                 <div class="name">Marie G.</div>
-                                 <div class="stars">
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
+                              <div class="customers-review d-flex align-items-center">
+                                 <div class="name me-2">Marie G.</div>
+                                 <div class="stars pe-2">
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
                                  </div>
                                  <div class="date">
                                     18/02/2022 - 21:12
                                  </div>
                               </div>
                               <div class="feedback">
-                                 <p>Constituendi autem sunt qui sint inConstituendi autem sunt qui sint inConstituendi autem sunt qui sint in</p>
+                                 <p class="f-mr-15">Constituendi autem sunt qui sint inConstituendi autem sunt qui sint inConstituendi autem sunt qui sint in</p>
                               </div>
                            </div>
                            <div class="review-item">
-                              <div class="persion-info d-flex">
-                                 <div class="name">Marie G.</div>
-                                 <div class="stars">
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
-                                    <span><img src="assets/images/results/star.png" alt="star"></span>
+                              <div class="customers-review d-flex align-items-center">
+                                 <div class="name me-2">Marie G.</div>
+                                 <div class="stars pe-2">
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
+                                    <span><img class="img-fluid" src="assets/images/results/star.png" alt="star"></span>
                                  </div>
                                  <div class="date">
                                     18/02/2022 - 21:12
                                  </div>
                               </div>
                               <div class="feedback">
-                                 <p>Constituendi autem sunt qui sint inConstituendi autem sunt qui sint inConstituendi autem sunt qui sint in</p>
+                                 <p class="f-mr-15">Constituendi autem sunt qui sint inConstituendi autem sunt qui sint inConstituendi autem sunt qui sint in</p>
                               </div>
                            </div>
 
-                           <button class="btn">+ See more reviews</button>
-                           <a href="#" class="btn">Leave a review</a>
+                           <div class="text-center py-2">
+                              <button class="btn">+ See more reviews</button>
+                           </div>
+                           <div class="text-center pb-3">
+                              <button class="btn btn-yellow px-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                 Leave a review
+                              </button>
+                           </div>
 
-                           <div class="review-writter">
-                              <form>
-                                 <div class="row">
-                                    <div class="col-md-6">
-                                       <input type="text" class="form-control" placeholder="Votre Nom et Prénom ">
-                                    </div>
-                                    <div class="col-md-6">
-                                       <input type="text" class="form-control" placeholder="Votre Email">
-                                    </div>
-                                    <div class="col-md-6">
-                                       <input type="text" class="form-control" placeholder="Votre Numéro de Télephone">
-                                    </div>
-                                    <div class="col-md-6">
-                                       <input type="text" class="form-control" placeholder="Votre note de 1 à 5">
-                                    </div>
-   
-                                    <div class="col-12">
-                                       <textarea class="form-control" name="Votre commentaire" id="w" cols="20" rows="5" placeholder="Votre commentaire"></textarea>
-                                    </div>
-                                    <div class="col-md-6">
-                                       <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+                           <div class="collapse" id="collapseExample">
+                              <div class="card card-body">
+                                 <div class="review-writter">
+                                    <form>
+                                       <div class="row">
+                                          <div class="col-md-6 mb-3">
+                                             <input type="text" class="form-control" placeholder="Votre Nom et Prénom ">
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                             <input type="text" class="form-control" placeholder="Votre Email">
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                             <input type="text" class="form-control" placeholder="Votre Numéro de Télephone">
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                             <input type="text" class="form-control" placeholder="Votre note de 1 à 5">
+                                          </div>
+         
+                                          <div class="col-12 mb-4">
+                                             <textarea class="form-control" name="Votre commentaire" id="w" cols="20" rows="5" placeholder="Votre commentaire"></textarea>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                             <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6 mb-3 text-center">
+                                             <a href="#" class="btn btn-red px-5">Envoyer mon avis</a>
+                                          </div>
                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                       <a href="#" class="btn btn-red">Envoyer mon avis</a>
-                                    </div>
+                                    </form>
                                  </div>
-                              </form>
+                              </div>
                            </div>
                         </div>
 
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                           <h2>Study training</h2>
+                           <h2 class="f-mr-15"><strong>Study training</strong></h2>
 
-                           <div class="degree-item">
+                           <div class="degree-item d-flex align-items-center">
                               <div class="image">
-                                 <img src="assets/images/graduate0cap.png" alt="cap">
+                                 <img class="img-fluid" src="assets/images/graduate0cap.png" alt="cap">
                               </div>
-                              <div class="text">
-                                 <h5>Center Reiki Paris</h5>
-                                 <p><strong>Reiki(2017):</strong> Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. 
+                              <div class="text ps-2">
+                                 <h5 class="f-mr-15"><strong>Center Reiki Paris</strong></h5>
+                                 <p class="f-mr-15"><strong>Reiki(2017):</strong> Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. 
                                     De quibus tres video sententias ferri, quarum nullam probo, unam,</p>
                               </div>
                            </div>
-                           <div class="degree-item">
+                           <div class="degree-item  d-flex align-items-center">
                               <div class="image">
-                                 <img src="assets/images/graduate0cap.png" alt="cap">
+                                 <img class="img-fluid" src="assets/images/graduate0cap.png" alt="cap">
                               </div>
-                              <div class="text">
-                                 <h5>Center Reiki Paris</h5>
-                                 <p><strong>Reiki(2017):</strong> Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. 
+                              <div class="text ps-2">
+                                 <h5 class="f-mr-15 pb-2"><strong>Center Reiki Paris</strong></h5>
+                                 <p class="f-mr-15"><strong>Reiki(2017):</strong> Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. 
                                     De quibus tres video sententias ferri, quarum nullam probo, unam,</p>
                               </div>
                            </div>
                         </div>
 
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                           <h2>Further information</h2>
-
-                           <table class="table">
-                              <tbody>
-                                <tr>
-                                  <td>Type of consultation:</td>
-                                  <td>At home, at the office, online</td>
-                                </tr>
-                                <tr>
-                                  <td>Concerned public:</td>
-                                  <td>Adults, adolescents, children, infants, pregnant women</td>
-                                </tr>
-                                <tr>
-                                  <th>SIRET number</th>
-                                  <td>81098996800016</td>
-                                </tr>
-                                <tr>
-                                  <th>Practice since:</th>
-                                  <td >
-                                    <ul class="ps-0">
-                                       <li>- Magnetizor: 2014</li>
-                                       <li>- Healer: 2018</li>
-                                       <li>- Reiki: 2010</li>
-                                    </ul>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        
-
+                           <div class="further-info">
+                              <h2 class="f-mr-15 pb-3">Further information</h2>
+   
+                              <table class="table">
+                                 <tbody>
+                                   <tr>
+                                     <th>Type of consultation:</th>
+                                     <td>At home, at the office, online</td>
+                                   </tr>
+                                   <tr>
+                                     <th>Concerned public:</th>
+                                     <td>Adults, adolescents, children, infants, pregnant women</td>
+                                   </tr>
+                                   <tr>
+                                     <th>SIRET number</th>
+                                     <td>81098996800016</td>
+                                   </tr>
+                                   <tr>
+                                     <th>Practice since:</th>
+                                     <td >
+                                       <ul class="ps-0">
+                                          <li>- Magnetizor: 2014</li>
+                                          <li>- Healer: 2018</li>
+                                          <li>- Reiki: 2010</li>
+                                       </ul>
+                                     </td>
+                                   </tr>
+                                 </tbody>
+                              </table>
+                           </div>
                         </div>
                       </div>
                   </div>
@@ -284,23 +483,23 @@
             </div>
          </div>
 
-         <div class="col-2">
-            <div class="get-contact">
+         <div class="col-2 d-none d-xl-block px-0">
+            <div class="get-contact sticky-top">
                <div class="contact-form">
-                  <h4 class="header-top">Contacter Severine Marthal </h4>
+                  <h4 class="header-top text-center f-mr-15">Contacter Severine Marthal </h4>
                
                   <form>
                      <div class="row">
-                        <div class="col-12">
+                        <div class="mb-2 col-12">
                            <input type="text" class="form-control" placeholder="Votre Nom et Prénom">
                         </div>
-                        <div class="col-12">
+                        <div class="mb-2 col-12">
                            <input type="text" class="form-control" placeholder="Votre Email">
                         </div>
-                        <div class="col-12">
+                        <div class="mb-2 col-12">
                            <input type="text" class="form-control" placeholder="Votre Numéro de Télephone">
                         </div>
-                        <div class="col-12">
+                        <div class="mb-2 col-12">
                           <select class="form-control">
                               <option>Subject</option>
                               <option>2</option>
@@ -308,11 +507,13 @@
                               <option>4</option>
                           </select>
                         </div>
-                        <div class="col-12">
-                           <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+                        <div class="mb-2 col-12 ">
+                           <div class="positon-relative captcha-parent">
+                              <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+                              </div>
                            </div>
                         </div>
-                        <div class="col-12">
+                        <div class="mb-2 col-12 text-center">
                            <a href="#" class="btn btn-red">Envoyer mon message </a>
                         </div>
                      </div>
@@ -325,41 +526,169 @@
   </div>
 
   <!-- ///////////////////// floating eamil -->
-  <div class="mail-to">
-   <div class="container">
-      <form>
-         <div class="row">
-            <div class="col-4">
-               <input type="text" class="form-control" placeholder="Votre Nom et Prénom">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title text-center" id="staticBackdropLabel">Contacter Severine Marthal </h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="mail-to">
+            <div class="container">
+               <form>
+                  <div class="row">
+                     <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Votre Nom et Prénom">
+                     </div>
+                     <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Votre Email">
+                     </div>
+                     <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Votre Numéro de Télephone">
+                     </div>
+                     <div class="col-12 mb-3">
+                       <select class="form-control">
+                           <option>Subject</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                       </select>
+                     </div>
+                     <div class="col-md-6 text-center">
+                        <div style="transform: scale(0.7); margin: auto;" class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+                        </div>
+                     </div>
+                     <div class="col-md-6 p-3 pt-0 text-center">
+                        <a href="#" class="btn btn-red f-mr-15">Envoyer mon message </a>
+                     </div>
+                  </div>
+               </form>
             </div>
-            <div class="col-4">
-               <input type="text" class="form-control" placeholder="Votre Email">
-            </div>
-            <div class="col-4">
-               <input type="text" class="form-control" placeholder="Votre Numéro de Télephone">
-            </div>
-            <div class="col-12">
-              <select class="form-control">
-                  <option>Subject</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-              </select>
-            </div>
-            <div class="col-6">
-               <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
-               </div>
-            </div>
-            <div class="col-6">
-               <a href="#" class="btn btn-red">Envoyer mon message </a>
-            </div>
-         </div>
-      </form>
+           </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
    </div>
-  </div>
+ </div>
+ <!-- /////////////////////////////////// -->
+
+ <!-- see number ///////////// -->
+ <div class="modal fade" id="staticBackdropmobile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropmobileLabel" aria-hidden="true">
+   
+   <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-body bg-red text-center text-white f-mr-25 py-5">
+
+         02.31.34.11.56
+       </div>
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+     </div>
+   </div>
+ </div>
+ <!-- ////////////// -->
 
 
 
+   <!-- footer starts -->
+   <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-md-6 col-xl-2 px-4 px-md-0">
+              <div class="address px-5 px-md-0 pb-4 pb-md-0">
+                <img class="img-fluid" src="assets/images/brand-icon-white.png" alt="barand">
+                <p>34 avenue des Champs-Elysée
+                  Paris - 75008
+                </p>
+                <a href="#">Contact@website.com</a>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-xl-4 p-0 d-flex justify-content-center">
+              <div class="ms-md-3 top-search">
+                <div class="header text-center">
+                  <h5>Top Search</h5>
+                  <img class="img-fluid" src="assets/images/line.png" alt="line">
+                </div>
+                <div class="content">
+                  <div class="d-flex justify-content-between">
+                    <a href="#">Magnetizor Paris</a>
+                    <a href="#">Magnetizor Rennes</a>
+                    <a href="#">Magnetizor Rennes</a>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <a href="#">Magnetizor Nantes</a>
+                    <a href="#">Magnetizor Caen</a>
+                    <a href="#">Magnetizor Caen</a>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <a href="#">Magnetizor Aix</a>
+                    <a href="#">Magnetizor Rouen</a>
+                    <a href="#">Magnetizor Rouen</a>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <a href="#">Magnetizor Nantes</a>
+                    <a href="#">Magnetizor Caen</a>
+                    <a href="#">Magnetizor Caen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 pt-4 pt-xl-0 col-xl-3">
+              <div class="info">
+                <div class="header text-center">
+                  <h5>Informations</h5>
+                  <img class="img-fluid" src="assets/images/line.png" alt="line">
+                </div>
+                <div class="content">
+                  <ul class="ps-0 ps-xl-4">
+                    <li>CGV/CGU</li>
+                    <li>Mentions Légales</li>
+                    <li>A propos</li>
+                    <li>Blog</li>
+                    <li>Contactez-nous</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 pt-4 pt-xl-0 col-xl-3 px-0">
+              <div class="notes">
+                <div class="header text-center">
+                  <h5>Notes Importantes</h5>
+                  <img class="img-fluid" src="assets/images/line.png" alt="line">
+                </div>
+                <div class="content">
+                  <p>
+                    Eius populus ab incunabulis primis ad usque 
+                    pueritiae tempus extremum, quod annis 
+                    circumcluditur fere trecentis, circummurana 
+                    pertulit bella, deinde aetatem ingressus 
+                    adultam post multiplices bellorum aerumnas 
+                    Alpquilliora vitae discessit.</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-2">
+        <div class="container">
+          <div class="copyright d-flex justify-content-center align-items-center">
+            <img class="img-fluid me-3" src="assets/images/logo.png" alt="logo">
+            <p> Copyright 2022 - xxxxxxxxxx.com tous droits réservés </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ended -->
+    
 
 
   <!-- script -->

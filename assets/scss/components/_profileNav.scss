@@ -1,0 +1,58 @@
+.profile-nav{
+   background: #333359;
+   padding: 0 15px;
+   color: #fff;
+   
+   .title{
+      font-family: "MyriadproRegular";
+      font-size: 20px;
+   }
+}
+
+.modal{
+   padding: 25px;
+   .modal-dialog{
+      width: 100%;
+      max-width: 850px;
+   }
+}
+
+.contact-form{
+   border: 1px solid #eeeeee;
+   padding: 8px;
+   max-width: 200px;
+   margin-top: 5px;
+   right: 15px;
+   top: 15px;
+
+
+   .header-top{
+      background: #32314c;
+      color: #fff;
+      padding: 15px 5px;
+      margin-bottom: 10px;
+   }
+
+   .captcha-parent{
+      height: 70px;
+      width: 100%;
+
+      .g-recaptcha{
+         .rc-anchor{
+            width: 50px;
+         }
+      }
+   }
+
+   input{
+      &::placeholder{
+         font-size: 15px;
+         color: rgba(0, 0, 0, 0.404);
+      }
+   }
+
+   .btn-red{
+      font-size: 15px;
+   }
+
+}

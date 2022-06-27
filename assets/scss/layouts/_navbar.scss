@@ -1,4 +1,10 @@
 .header{
+   .navbar-brand{
+      @media(max-width: 767px){
+         max-width: 160px;
+      }
+   }
+
    .navbar{
       .nav-item{
          .nav-link{
