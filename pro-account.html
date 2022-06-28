@@ -8,7 +8,8 @@
   <link rel='shortcut icon' href='assets/images/logo-black.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendor/country-select/css/countrySelect.min.css">
+  <link rel="stylesheet" href="assets/vendor/country-select/css/countrySelect.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -78,7 +79,40 @@
 
       <div class="search-navigation collapse" id="collapseExample">
         <div class="py-2">
-          <h2>Trouvez un Magnétiseur proche de chez vous</h2>
+          <h2 class="py-2">Trouvez un Magnétiseur proche de chez vous</h2>
+          <form>
+            <div class="search-group d-flex justify-content-center align-items-center pb-2">
+              <div class="coyntry-select">
+                <ul>
+                  <li>
+                    <input id="country_selector" type="text" />
+                  </li>
+                </ul>
+              </div>
+              <div class="location-select position-relative">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="City, Department, Postal Code">
+                  <a class="input-group-text"  data-bs-toggle="collapse" href="#itemColOption" role="button"><i class="fas fa-chevron-down"></i></a>
+                </div>
+
+                <!-- collapsed select -->
+                <div class="collapse-parent">
+                  <div class="collapse" id="itemColOption">
+                    <div class="card card-body">
+                      <ul class="p-0 text-start">
+                        <li><i class="me-2 fas fa-bullseye-pointer"></i><span class="f-mr-15">Online</span></li>
+                        <li><i class="me-2 fas fa-location-arrow"></i><span class="f-mr-15">Near me</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- collapsed select -->
+              </div>
+              <div>
+                <button class="btn btn-red search"><i class="fas fa-search me-xl-2 text-dark"></i><span class="d-none d-xl-inline-block">Search</span></button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -134,18 +168,18 @@
        <div class="page-navigator d-flex justify-content-center">
          <nav>
            <ul class="pagination">
-             <li>
-               <a class="page-link active" href="#" tabindex="-1">1</a>
+             <li class="page-link active" id="first">
+               1
              </li>
-             <li><a class="page-link" href="#">2</a></li>
-             <li><a class="page-link" href="#">3</a></li>
+             <li class="page-link" id="second">2</li>
+             <li class="page-link" id="third">3</li>
            </ul>
          </nav>
        </div>
    
        <div class="main-contents-body">
    
-         <div class="section-one">
+         <div class="section-one" id="section-one">
            <span class="text-center d-block section-tag">Account information</span>
      
            <h2 class="text-center section-heading">Remplissez vos informations personnelles</h2>
@@ -229,10 +263,10 @@
 
                         <div class="d-flex align-itens-center border border-1">
                            <select class="border-0" name="country">
-                              <option value="A">&#x1F1E7;&#x1F1F7;</option>
-                              <option value="B">B</option>
-                              <option value="C">C</option>
-                              <option value="D">D</option>
+                              <option value="A">Be</option>
+                              <option value="B">Fr</option>
+                              <option value="C">Lu</option>
+                              <option value="D">Sz</option>
                            </select>
                            <input type="text" class="form-control border-0" id="mobile-number" placeholder="123 456 789">
                         </div>
@@ -243,12 +277,12 @@
    
              
              <div class="d-flex justify-content-center pb-4">
-               <a href="#" class="btn btn-red large">Next Step</a>
+               <button type="button" href="#" class="btn btn-red large" id="stepToTwo">Next Step</button>
              </div>
            </form>
          </div>
    
-         <div class="section-two">
+         <div class="section-two d-none" id="section-two">
            <span class="section-tag text-center d-block">Subscription</span>
      
            <h2 class="text-center section-heading">Selectionnez votre Abonnement</h2>
@@ -311,7 +345,7 @@
               </div>
       
               <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-red large">Next Step</a>
+                <button type="button" href="#" class="btn btn-red large" id="stepToThree">Next Step</button>
               </div>
            </form>
    
@@ -328,7 +362,7 @@
            </div>
          </div>
    
-         <div class="section-three">
+         <div class="section-three d-none" id="section-three">
            <span class="section-tag d-block text-center">Subscription</span>
      
            <h2 class="section-heading text-center">Résumé de votre abonnement</h2>
@@ -511,7 +545,10 @@
 
 
   <!-- script -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js" async defer></script>
+  <script src="assets/vendor/country-select/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/country-select/countrySelect.min.js"></script>
+  <script src="assets/js/formProgress.js"></script>  
   <!-- end -->
 </body>
 </html>

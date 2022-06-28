@@ -6,6 +6,16 @@
    border-radius: 0;
 }
 
+.btnToggle{
+   background: #32314c;
+   color: #fff;
+   border-radius: 0;
+
+   &:hover{
+      color: #ff9902;
+   }  
+}
+
 .button-ash-black{
    background: #32314c;
    color: #fff;
@@ -38,6 +48,11 @@
    align-items: center;
    justify-content: center;
 
+   @media(max-width: 767px){
+      background: #32314c;
+      color: #fff
+   }
+
 }
 
 .btn-white-rounded{
@@ -52,6 +67,12 @@
    justify-content: center;
    max-width: 90px;
    border-radius: 25px;
+
+   @media(max-width: 767px){
+      background: #fff;
+      color: #000;
+      border: 1px solid #000;
+   }
 }
 
 .btn-red{

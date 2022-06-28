@@ -8,7 +8,7 @@
   <link rel='shortcut icon' href='assets/images/logo-black.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendor/country-select/css/countrySelect.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -77,7 +77,40 @@
 
       <div class="search-navigation collapse" id="collapseExample">
         <div class="py-2">
-          <h2>Trouvez un Magnétiseur proche de chez vous</h2>
+         <h2 class="py-2">Trouvez un Magnétiseur proche de chez vous</h2>
+         <form>
+           <div class="search-group d-flex justify-content-center align-items-center pb-2">
+             <div class="coyntry-select">
+               <ul>
+                 <li>
+                   <input id="country_selector" type="text" />
+                 </li>
+               </ul>
+             </div>
+             <div class="location-select position-relative">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="City, Department, Postal Code">
+                 <a class="input-group-text"  data-bs-toggle="collapse" href="#itemColOption" role="button"><i class="fas fa-chevron-down"></i></a>
+               </div>
+
+               <!-- collapsed select -->
+               <div class="collapse-parent">
+                 <div class="collapse" id="itemColOption">
+                   <div class="card card-body">
+                     <ul class="p-0 text-start">
+                       <li><i class="me-2 fas fa-bullseye-pointer"></i><span class="f-mr-15">Online</span></li>
+                       <li><i class="me-2 fas fa-location-arrow"></i><span class="f-mr-15">Near me</span></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+               <!-- collapsed select -->
+             </div>
+             <div>
+               <button class="btn btn-red search"><i class="fas fa-search me-xl-2 text-dark"></i><span class="d-none d-xl-inline-block">Search</span></button>
+             </div>
+           </div>
+         </form>
         </div>
       </div>
     </div>
@@ -454,7 +487,10 @@
 
 
   <!-- script -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js" async defer></script>
+  <script src="assets/vendor/country-select/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/country-select/countrySelect.min.js"></script>
+  <script src="assets/js/custom.js"></script>
   <!-- end -->
 </body>
 </html>

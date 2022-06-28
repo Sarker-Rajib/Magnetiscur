@@ -1,7 +1,16 @@
+.pfofile{
+   .containe, .container-fluid{
+      overflow: hidden;
+   }
+}
 .profile-nav{
    background: #333359;
    padding: 0 15px;
    color: #fff;
+
+   @media(max-width: 767px){
+      background: #fff;
+      color: #000   }
    
    .title{
       font-family: "MyriadproRegular";

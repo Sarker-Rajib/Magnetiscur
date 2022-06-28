@@ -8,7 +8,7 @@
   <link rel='shortcut icon' href='assets/images/logo-black.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendor/country-select/css/countrySelect.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -79,6 +79,39 @@
       <div class="search-navigation collapse" id="collapseExample">
         <div class="py-2">
           <h2>Trouvez un Magnétiseur proche de chez vous</h2>
+          <form>
+            <div class="search-group d-flex justify-content-center align-items-center py-3">
+              <div class="coyntry-select">
+                <ul>
+                  <li>
+                    <input id="country_selector" type="text" />
+                  </li>
+                </ul>
+              </div>
+              <div class="location-select position-relative">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="City, Department, Postal Code">
+                  <a class="input-group-text"  data-bs-toggle="collapse" href="#itemColOption" role="button"><i class="fas fa-chevron-down"></i></a>
+                </div>
+
+                <!-- collapsed select -->
+                <div class="collapse-parent">
+                  <div class="collapse" id="itemColOption">
+                    <div class="card card-body">
+                      <ul class="p-0 text-start">
+                        <li><i class="me-2 fas fa-bullseye-pointer"></i><span class="f-mr-15">Online</span></li>
+                        <li><i class="me-2 fas fa-location-arrow"></i><span class="f-mr-15">Near me</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- collapsed select -->
+              </div>
+              <div>
+                <button class="btn btn-red search"><i class="fas fa-search me-2"></i><span class="d-none d-md-inline-block">Search</span></button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -86,11 +119,11 @@
  <!-- header -->
 
   <div class="profile">
-   <div class="container px-0">
+   <div class="container-fluid">
       <div class="row">
          <div class="col-md-4 col-xl-3 col-xxl-2 px-0">
             <div class="profile-nav h-100">
-               <div class="top-section text-center">
+               <div class="top-section text-center pt-3 pb-2">
                   <div class="section-header text-center">
                      <h3 class="title">Séverine Marthal <span><img class="img-fluid ms-1" src="assets/images/success.png" alt="asssa"></span></h3>
                   </div>
@@ -104,57 +137,84 @@
                      </div>
                      <p class="f-mr-15">15 reviews</p>
                   </div>
-                  <img class="img-fluid py-2 my-1" src="assets/images/results/severine.png" alt="img">
                </div>
-               <div class="botttom-section">
-                  <div class="disciplines">
-                     <h3 class="section-head f-mr-15 text-center">My Disciplines</h3>
-                     <div class="item my-3">
-                        <div class="row gy-1 gx-0">
-                           <div class="col-6 p-0 d-flex justify-content-center"><a href="#" class="btn btn-white">Magnetizor</a></div>
-                           <div class="col-6 p-0 d-flex justify-content-center">   <a href="#" class="btn btn-white">Reiki</a></div>
-                           <div class="col-6 p-0 d-flex justify-content-center">      <a href="#" class="btn btn-white">Healer</a></div>
-                           <div class="col-6 p-0 d-flex justify-content-center">       <a href="#" class="btn btn-white">Hynosis</a></div>
-                        </div>
-                        
-                     
-                  
-                 
-                     </div>
-                  </div>
-                  <div class="symptom">
-                     <h3 class="section-head text-center f-mr-15">Symptoms I treat:</h3>
-                     <div class="item my-3">
-                        <div class="row gx-0 gy-1">
-                           <div class="col-6 px-0 d-flex justify-content-center">
-                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
-                           </div>
-                           <div class="col-6 px-0 d-flex justify-content-center">
-                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
-                           </div>
-                           <div class="col-6 px-0 d-flex justify-content-center">
-                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
-                           </div>
-                           <div class="col-6 px-0 d-flex justify-content-center">
-                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
-                           </div>
-                           <div class="col-6 px-0 d-flex justify-content-center">
-                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
-                           </div>
-                           <div class="col-6 px-0 d-flex justify-content-center">
-                              <a href="#" class="btn btn-white-rounded">Symptom#1</a>
-                           </div>
+
+               <div class="section-main pt-3 pt-md-0">
+                  <div class="row">
+                     <div class="col-5 col-md-12 text-center">
+                        <img class="img-fluid py-2 my-1" src="assets/images/results/severine.png" alt="img">
+
+                        <div class="social-link py-3 d-md-block d-none">
+                           <ul class="p-0 d-flex justify-content-center">
+                              <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/globe.png" alt="image"></a></li>
+                              <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/fb.png" alt="image"></a></li>
+                              <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/insta.png" alt="image"></a></li>
+                              <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/in.png" alt="image"></a></li>
+                              <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/youtube.png" alt="image"></a></li>
+                           </ul>
                         </div>
                      </div>
+
+            
+                     <div class="col-7 col-md-12 botttom-section text-center">
+                        <div class="disciplines text-center pt-0 pt-md-1">
+                           <h3 class="section-head f-mr-15 text-center pb-1">My Disciplines</h3>
+                           <div class="item my-0 my-md-3">
+                              <div class="row gy-1 gx-0">
+                                 <div class="col-6 p-0 d-flex justify-content-center"><a href="#" class="btn btn-white">Magnetizor</a></div>
+                                 <div class="col-6 p-0 d-flex justify-content-center"><a href="#" class="btn btn-white">Reiki</a></div>
+                                 <div class="col-6 p-0 d-flex justify-content-center"><a href="#" class="btn btn-white">Healer</a></div>
+                                 <div class="col-6 p-0 d-flex justify-content-center"><a href="#" class="btn btn-white">Hynosis</a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="symptom">
+                           <h3 class="section-head text-center f-mr-15 pb-1 pb-md-3">Symptoms I treat:</h3>
+                           <div class="item my-0">
+                              <div class="row gx-0 gy-1">
+                                 <div class="col-6 px-0 d-flex justify-content-center">
+                                    <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                                 </div>
+                                 <div class="col-6 px-0 d-flex justify-content-center">
+                                    <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                                 </div>
+                                 <div class="col-6 px-0 d-flex justify-content-center">
+                                    <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                                 </div>
+                                 <div class="col-6 px-0 d-flex justify-content-center">
+                                    <a href="#" class="btn btn-white-rounded">Symptom#1</a>
+                                 </div>
+                                 <div class="col-6 px-0 d-flex justify-content-center">
+                                    <a href="#" class="btn btn-white-rounded d-none d-md-block ">Symptom#1</a>
+                                 </div>
+                                 <div class="col-6 px-0 d-flex  justify-content-center">
+                                    <a href="#" class="btn btn-white-rounded d-none d-md-block">Symptom#1</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+   
+                  </div>
+
+                  <div class="social-link py-3 d-block d-md-none">
+                     <ul class="p-0 d-flex justify-content-center">
+                        <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/globe.png" alt="image"></a></li>
+                        <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/fb.png" alt="image"></a></li>
+                        <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/insta.png" alt="image"></a></li>
+                        <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/in.png" alt="image"></a></li>
+                        <li class="mx-1"><a class="img-fluid" href="#"><img src="assets/images/social/youtube.png" alt="image"></a></li>
+                     </ul>
                   </div>
                </div>
+
             </div>
          </div>
 
          <div class="col-md-8 col-xl-9 col-xxl-10 px-0">
             <!--  -->
             <div class="button-link-banner">
-               <div class="pt-3 text-center text-md-end pe-md-4">
+               <div class="text-center text-md-end pe-md-4">
                   <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                      <i class="fas fa-envelope me-2"></i>Send Mail
                   </button>
@@ -519,7 +579,7 @@
                   </div>
                </div>
       
-               <div class="col-3 d-none d-xl-block px-0">
+               <div class="col-xl-3 d-none d-xl-block">
                   <div class="get-contact sticky-top">
                      <div class="contact-form">
                         <h4 class="header-top text-center f-mr-15"><i class="far fa-envelope"></i> Contacter Severine Marthal </h4>
@@ -548,7 +608,7 @@
                                     <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                                  </div>
                               </div>
-                              <div class="mb-2 col-12 text-center">
+                              <div class="mb-2 col-12 text-center pt-2">
                                  <a href="#" class="btn btn-red">Envoyer mon message </a>
                               </div>
                            </div>
@@ -731,8 +791,15 @@
 
 
   <!-- script -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="assets/vendor/country-select/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/country-select/countrySelect.min.js"></script>
+  <script>
+   $("#country_selector").countrySelect({
+	   defaultCountry: "fr",
+   });
+  </script>
   <!-- end -->
 </body>
 </html>

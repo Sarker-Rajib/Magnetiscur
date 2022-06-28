@@ -67,9 +67,9 @@
   <div class="search-banner">
     <div class="container">
       <div class="banner-body">
-        <div class="search-box py-3">
-          <h2 class="f-mr-25 fw-bold py-3">Trouvez un Magnétiseur proche de chez vous</h2>
-  
+        <div class="search-box">
+          <h2 class="fw-bold pb-3">Trouvez un Magnétiseur proche de chez vous</h2>
+
           <form>
             <div class="search-group d-flex justify-content-center align-items-center">
               <div class="coyntry-select">
@@ -79,11 +79,27 @@
                   </li>
                 </ul>
               </div>
-              <div class="location-select">
-                <input type="text">
+              <div class="location-select position-relative">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="City, Department, Postal Code">
+                  <a class="input-group-text"  data-bs-toggle="collapse" href="#itemColOption" role="button"><i class="fas fa-chevron-down"></i></a>
+                </div>
+
+                <!-- collapsed select -->
+                <div class="collapse-parent">
+                  <div class="collapse" id="itemColOption">
+                    <div class="card card-body">
+                      <ul class="p-0 text-start">
+                        <li><i class="me-2 fas fa-bullseye-pointer"></i><span class="f-mr-15">Online</span></li>
+                        <li><i class="me-2 fas fa-location-arrow"></i><span class="f-mr-15">Near me</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- collapsed select -->
               </div>
               <div>
-                <button class="btn btn-red py-0">Search</button>
+                <button class="btn btn-red search"><i class="fas fa-search me-xl-2 text-dark"></i><span class="d-none d-xl-inline-block">Search</span></button>
               </div>
             </div>
           </form>
@@ -97,7 +113,7 @@
   <section class="Directory-of-Magnetizers">
     <div class="container">
       <div class="section-header">
-        <h1 class="section-heading">Bienvenue sur l’annuaire des Magnétiseurs</h1>
+        <h1 class="section-heading fw-bold text-center">Bienvenue sur l’annuaire des Magnétiseurs</h1>
         <p>Magnetiseur.com vous permet d’entrer en contact directement avec des thérapeutes spécialisés dans le magnétisme, notre annuaire est exclusivement réservés aux Magnétiseurs, Guérisseur et
         Rebouteux. Magnetiseur.com est aujourd’hui le site le premier annuaire regroupant tous les magnétiseurs de France, Belgique, luxembourg et la suisse. Découvrez leur profil, leur expérience, leurs 
         diplômes, leurs tarifs et leurs horaires. </p>
@@ -110,7 +126,7 @@
               <h3 class="section-heading">La différence entre le Magnetiseur, Guérisseur et Rebouteaux</h3>
               <img class="img-fluid" src="assets/images/home/LadifférenceMagnetiseur.png" alt="IMAMGE">
             </div>
-            
+             
             <div class="healing-magnetism">
               <h3 class="section-heading">Un magnétisme curatif</h3>
               <p>Guérisseur est un terme général pour désigner une personne capable de soigner naturellement certains maux. Cette 
@@ -137,42 +153,48 @@
               </p>
             </div>
 
-            <div class="healing-magnetism">
-              <h3 class="section-heading">Un magnétisme curatif</h3>
-              <p>Guérisseur est un terme général pour désigner une personne capable de soigner naturellement certains maux. Cette 
-                compétence, répandue à travers toutes les civilisations, existe dans la culture populaire occidentale depuis plusieurs 
-                siècles. Différentes spécialités cohabitent mais aucune n’est reconnue officiellement comme une pratique médicale.
-              </p>
+            <div id="healerDescription" class="healerDescription d-none d-xl-block">
+              <div class="healing-magnetism">
+                <h3 class="section-heading">Un magnétisme curatif</h3>
+                <p>Guérisseur est un terme général pour désigner une personne capable de soigner naturellement certains maux. Cette 
+                  compétence, répandue à travers toutes les civilisations, existe dans la culture populaire occidentale depuis plusieurs 
+                  siècles. Différentes spécialités cohabitent mais aucune n’est reconnue officiellement comme une pratique médicale.
+                </p>
+              </div>
+  
+              <div class="session-with-healer">
+                <h3 class="section-heading">session with a healer: for whom, for what?</h3>
+                <p>On rapproche souvent l’activité du guérisseur à celle du radiesthésiste ou du rebouteux. Si tous peuvent apaiser des 
+                  douleurs ou des troubles, leurs champs d’action diffèrent : le radiesthésiste utilise un pendule pour identifier la source 
+                  énergétique de la maladie et le rebouteux corrige les membres souffrants par des mobilisations manuelles, tandis que 
+                  le guérisseur travaille avec son propre magnétisme. Il n’est donc pas rare qu’un guérisseur se qualifie aussi de 
+                  magnétiseur. Certains y accolent la fonction de « coupeur de feu ». Le magnétisme est un phénomène physique 
+                  invisible, propre au Vivant, qui engendre des courants électromagnétiques naturels. Le guérisseur-magnétiseur oriente 
+                  ces forces pour « recharger » le courant énergétique de la personne. Il ne vise pas la guérison de la maladie mais à 
+                  restaurer l’équilibre de l’énergie vitale. C’est l’activation du système d’auto-guérison qui permettra de supprimer les 
+                  symptômes. Le magnétiseur est un guérisseur global car il cible le plan physique, psychique, émotionnel et 
+                  énergétique. Bien qu’elle ne s’explique pas sur le plan scientifique, la pratique apporte soulagement et confort aux 
+                  personnes qui ne trouvent pas de solutions médicales à leurs maux ou souhaitent en compléter l’action. Le guérisseur 
+                  reçoit adultes et enfants et traite les maux récalcitrants comme l’eczéma, le psoriasis ou les angoisses et le manque de 
+                  confiance en soi.
+                </p>
+              </div>
+  
+              <div class="healing-magnetism">
+                <h3 class="section-heading">Un magnétisme curatif</h3>
+                <p>Guérisseur est un terme général pour désigner une personne capable de soigner naturellement certains maux. Cette 
+                  compétence, répandue à travers toutes les civilisations, existe dans la culture populaire occidentale depuis plusieurs 
+                  siècles. Différentes spécialités cohabitent mais aucune n’est reconnue officiellement comme une pratique médicale.
+  
+  
+                  On rapproche souvent l’activité du guérisseur à celle du radiesthésiste ou du rebouteux. Si tous peuvent apaiser des 
+                  douleurs ou des troubles, leurs champs d’action diffèrent : le radiesthésiste utilise un pendule pour identifier la source  
+                </p>
+              </div>
             </div>
 
-            <div class="session-with-healer">
-              <h3 class="section-heading">session with a healer: for whom, for what?</h3>
-              <p>On rapproche souvent l’activité du guérisseur à celle du radiesthésiste ou du rebouteux. Si tous peuvent apaiser des 
-                douleurs ou des troubles, leurs champs d’action diffèrent : le radiesthésiste utilise un pendule pour identifier la source 
-                énergétique de la maladie et le rebouteux corrige les membres souffrants par des mobilisations manuelles, tandis que 
-                le guérisseur travaille avec son propre magnétisme. Il n’est donc pas rare qu’un guérisseur se qualifie aussi de 
-                magnétiseur. Certains y accolent la fonction de « coupeur de feu ». Le magnétisme est un phénomène physique 
-                invisible, propre au Vivant, qui engendre des courants électromagnétiques naturels. Le guérisseur-magnétiseur oriente 
-                ces forces pour « recharger » le courant énergétique de la personne. Il ne vise pas la guérison de la maladie mais à 
-                restaurer l’équilibre de l’énergie vitale. C’est l’activation du système d’auto-guérison qui permettra de supprimer les 
-                symptômes. Le magnétiseur est un guérisseur global car il cible le plan physique, psychique, émotionnel et 
-                énergétique. Bien qu’elle ne s’explique pas sur le plan scientifique, la pratique apporte soulagement et confort aux 
-                personnes qui ne trouvent pas de solutions médicales à leurs maux ou souhaitent en compléter l’action. Le guérisseur 
-                reçoit adultes et enfants et traite les maux récalcitrants comme l’eczéma, le psoriasis ou les angoisses et le manque de 
-                confiance en soi.
-              </p>
-            </div>
-
-            <div class="healing-magnetism">
-              <h3 class="section-heading">Un magnétisme curatif</h3>
-              <p>Guérisseur est un terme général pour désigner une personne capable de soigner naturellement certains maux. Cette 
-                compétence, répandue à travers toutes les civilisations, existe dans la culture populaire occidentale depuis plusieurs 
-                siècles. Différentes spécialités cohabitent mais aucune n’est reconnue officiellement comme une pratique médicale.
-
-
-                On rapproche souvent l’activité du guérisseur à celle du radiesthésiste ou du rebouteux. Si tous peuvent apaiser des 
-                douleurs ou des troubles, leurs champs d’action diffèrent : le radiesthésiste utilise un pendule pour identifier la source  
-              </p>
+            <div class="text-center pt-3 d-block d-xl-none">
+              <button class="btn btnToggle" id="btnToggleOne">Read More</button>
             </div>
           </div>
 
@@ -191,21 +213,28 @@
                     <li>Magnétiseur Lille</li>
                   </ul>
                 </div>
+
                 <div class="col-md-6">
-                  <ul>
-                    <li>Magnétiseur Strasbourg</li>
-                    <li>Magnétiseur Nantes</li>
-                    <li>Magnétiseur Toulouse</li>
-                    <li>Magnétiseur Vendee</li>
-                    <li>Magnétiseur Morbihan</li>
-                    <li>Magnétiseur Ille-et-vilaine</li>
-                    <li>Magnétiseur Seine-et-marne </li>
-                  </ul>
+                  <div class="d-none d-md-block" id="hoddenSmOne">
+                    <ul>
+                      <li>Magnétiseur Strasbourg</li>
+                      <li>Magnétiseur Nantes</li>
+                      <li>Magnétiseur Toulouse</li>
+                      <li>Magnétiseur Vendee</li>
+                      <li>Magnétiseur Morbihan</li>
+                      <li>Magnétiseur Ille-et-vilaine</li>
+                      <li>Magnétiseur Seine-et-marne </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="text-center pt-3 d-block d-md-none">
+                  <button class="btn btnToggle" id="btnToggleSmOne">See More Search</button>
                 </div>
               </div>
             </div>
             
-            <div class="magnetizers-epartment">
+            <div class="magnetizers-epartment" id="magnetizers-department">
               <h3 class="text-center section-heading">Les magnétiseurs par Départment</h3>
               <div class="row">
                 <div class="col-md-6">
@@ -325,7 +354,12 @@
                   </ul>
                 </div>
               </div>
+
             </div>
+            <div class="text-center py-3 d-block d-xl-none">
+              <button class="btn btnToggle" id="btnToggleSmTwo">See More Department</button>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -38,8 +38,10 @@
             top: 100%;
             left: 0;
             width: 100%;
-            background: $color-tilt;  
+            background: #ffffffdc;  
             backdrop-filter: blur(2px);
+            border-bottom: 4px solid #ff4f4f;
+            z-index: 999;
 
             .navbar-nav{
                padding-top: 15px;

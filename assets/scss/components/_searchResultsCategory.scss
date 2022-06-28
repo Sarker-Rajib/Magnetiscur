@@ -1,7 +1,5 @@
 .category-search{
    .section-heading{
-      font-family: "MyriadproRegular";
-      font-size: 25px;
       font-weight: bold;
       text-align: center;
       padding: 20px 0;
@@ -57,7 +55,6 @@
 
                .text-header{
                   h3{
-                     font-family: "MyriadproRegular";
                      font-size: 20px;
                      font-weight: bold;
                      padding-bottom: 5px;
@@ -74,8 +71,6 @@
                      justify-content: center;
                      
                      p{
-                        font-family: "MyriadproRegular";
-                        font-size: 15px;
                         padding: 5px 0;
                      }
                   }
@@ -104,10 +99,5 @@
 
    .section-bottom{
       padding-bottom: 50px;
-      
-      p{
-         font-family: "MyriadproRegular";
-         font-size: 15px;
-      }
    }
 }
