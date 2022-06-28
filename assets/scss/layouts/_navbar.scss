@@ -87,8 +87,8 @@
       .direction-btn{
          background: #fff;
          color: #000;
-         border-radius: 15px;
-         padding: 4px 10px;
+         border-radius: 25px;
+         padding: 4px 8px 4px 4px;
          font-size: 15px;
 
          @media(max-width: 767px){
@@ -99,8 +99,8 @@
             background: #3f3d66;
             color: #fff;
             font-size: 15px;
-            padding: 8px;
-            border-radius: 15px;
+            padding: 8px 9px;
+            border-radius: 25px;
             margin-right: 7px;
 
             @media(max-width: 767px){

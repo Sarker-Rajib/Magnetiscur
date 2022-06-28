@@ -47,18 +47,24 @@
                img{
                   width: 100%;
                   max-width: 145px;
+                  height: 100%;
+                  object-fit: cover;
                }
             }
 
             .text{
                padding: 10px 30px 10px 15px;
+               width: 100%;
 
                .text-header{
                   h3{
                      font-size: 20px;
                      font-weight: bold;
-                     padding-bottom: 5px;
                      text-align: center;
+
+                     @media (max-width: 575px) {
+                        font-size: 16px;
+                     }
 
                      span{
                         margin-left: 5px;
@@ -69,6 +75,8 @@
                      display: flex;
                      align-items: center;
                      justify-content: center;
+                     margin-top: -5px;
+                     margin-bottom: 5px;
                      
                      p{
                         padding: 5px 0;
@@ -90,6 +98,7 @@
                   .fee{
                      font-family: "MyriadproRegular";
                      font-size: 13px;
+                     padding-block: 5px;
                   }
                }
             }

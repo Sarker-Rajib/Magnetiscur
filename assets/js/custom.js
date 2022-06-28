@@ -48,13 +48,11 @@ $("#country_selector").countrySelect({
 	const listDepartment = document.getElementById("magnetizers-department");
 	const btnToggleSmTwo = document.getElementById("btnToggleSmTwo");
 
-	// let width = listDepartment.offsetWidth;
-	// console.log(width);
 
 	btnToggleSmTwo.addEventListener("click", ()=> {
 
 	  if (listDepartment.style.height = "350px"){
-		listDepartment.style.height = "100%"
+		listDepartment.style.height = "auto"
 		} 
 	});
 }

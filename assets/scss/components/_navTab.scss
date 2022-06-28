@@ -32,6 +32,11 @@
             tr, th, td{
                border: 0;
                padding: 5px;
+               
+               font-size: 15px;
+               @media (max-width: 767px) {
+                  font-size: 14px;
+               }
             }
 
             th{
@@ -101,6 +106,10 @@
          table{
             th, td, tr{
                border: 0;
+               font-size: 15px;
+               @media (max-width: 767px) {
+                  font-size: 14px;
+               }
             }
          }
       }
