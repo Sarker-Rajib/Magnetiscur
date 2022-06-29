@@ -5,6 +5,10 @@
       }
    }
 
+   .container{
+      position: relative;
+   }
+
    .navbar{
       .nav-item{
          .nav-link{
@@ -46,7 +50,6 @@
             .navbar-nav{
                padding-top: 15px;
                padding-bottom: 15px;
-               padding-left: 8%;
             }
          }
       }

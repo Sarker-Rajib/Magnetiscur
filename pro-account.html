@@ -68,7 +68,7 @@
             <a href="#" class="btn direction-btn"><i class="far fa-arrow-left"></i><span class="d-none d-md-inline-block">Back to Home</span></a>
           </div>
           <div class="col">
-            <h2>Home &#62; Pro <span>Account Creation</span></h2>
+            <h2 class="text-nowrap"><a href="index.html" class="text-white">Home  </a>&#62; Pro <span>Account Creation</span></h2>
           </div>
           <div class="col text-end">
             <a class="btn direction-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-plus"></i><span class="d-none d-md-inline-block">New Search</span></a>
@@ -88,7 +88,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="location-select position-relative">
+              <div class="location-select position-relative measured-width">
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="City, Department, Postal Code">
                   <a class="input-group-text"  data-bs-toggle="collapse" href="#itemColOption" role="button"><i class="fas fa-chevron-down"></i></a>
@@ -199,14 +199,20 @@
                  </div>
    
                  <div class="col-md-6">
-                   <div class="mb-3">
-                     <input type="password" class="form-control" placeholder="**********">
-                   </div>
+                  <div class="input-group mb-3 Yellow-bg">
+                    <input type="password" class="form-control border-0" placeholder="**********">
+                    <span class="input-group-text border-0"><i class="far fa-eye"></i></span>
+                  </div>
                  </div>
    
                  <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <input type="password" class="form-control border-0" placeholder="Password Confirmation">
+                    <span class="input-group-text bg-white border-0"><i class="far fa-eye"></i></span>
+                  </div>
+                 </div>
+                 <div class="col-md-6">
                    <div class="mb-3">
-                     <input type="password" class="form-control" placeholder="Password Confirmation">
                    </div>
                  </div>
                </div>
@@ -267,7 +273,7 @@
                               </li>
                             </ul>
                           </div>
-                           <input type="text" class="form-control border-0" id="mobile-number" placeholder="123 456 789">
+                           <input type="text" class="form-control border-0 ms-2" id="mobile-number" placeholder="123 456 789">
                         </div>
                      </div>
                  </div>
@@ -382,12 +388,21 @@
            
            <form>
                <div class="check-out-option px-2 px-md-5">
-                  <div class="form-check pb-2 d-flex align-items-center">
-                     <input class="me-2" type="radio" name="card-pay" id="card-pay2" checked>
-                     <label class="form-check-label" for="card-pay2">
-                        Credit or Debit Card
-                     </label>
+                <div class="row">
+                  <div class="col-6 ps-0">
+                    <div class="form-check pb-2 ps-2 d-flex align-items-center">
+                       <input class="me-2 ms-1" type="radio" name="card-pay" id="card-pay2" checked>
+                       <label class="form-check-label" for="card-pay2">
+                          Credit or Debit Card
+                       </label>
+                    </div>
                   </div>
+                  <div class="col-6">
+                    <div class="image">
+                      <img src="assets/images/cards.png" class="img-fluid" alt="card">
+                    </div>
+                  </div>
+                </div>
 
                   <div class="row">
                      <div class="col-md-6">
@@ -499,11 +514,11 @@
               </div>
               <div class="content">
                 <ul>
-                  <li>CGV/CGU</li>
-                  <li>Mentions Légales</li>
-                  <li>A propos</li>
-                  <li>Blog</li>
-                  <li>Contactez-nous</li>
+                  <li><a href="#">CGV/CGU</a></li>
+                  <li><a href="#">Mentions Légales</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contactez-nous</a></li>
                 </ul>
               </div>
             </div>

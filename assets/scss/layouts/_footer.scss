@@ -19,8 +19,6 @@
 
          p{
             color: #fff;
-            font-family: "MyriadproRegular";
-            font-size: 15px;
             padding-bottom: 15px;
             white-space: pre-line;
          }
@@ -52,6 +50,10 @@
       }
 
       .info{
+         @media(min-width: 1200px){
+            width: 50%;
+            margin: auto;
+         }
          img{
             padding: 10px 0;
          }
@@ -59,7 +61,14 @@
             color: #fff;
             list-style-type: disc;
             font-family: "MyriadproRegular";
-            font-size: 15px;
+            
+            a{
+               font-size: 15px;
+               color: #fff;
+               &:hover{
+                  color: #84849f;
+               }
+            }
          }
       }
 
