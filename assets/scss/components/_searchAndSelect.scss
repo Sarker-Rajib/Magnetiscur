@@ -50,8 +50,10 @@
 
 .country-list {
     flex-direction: column;
+    width: 45px !important;
     .country {
         margin: 0 !important;
+        width: 100%;
     }
 }
 
