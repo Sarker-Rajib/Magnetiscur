@@ -51,6 +51,9 @@
 .country-list {
     flex-direction: column;
     width: 45px !important;
+    @media(min-width: 767px){
+        width: 50px !important;
+    }
     .country {
         margin: 0 !important;
         width: 100%;
