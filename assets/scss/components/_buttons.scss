@@ -78,6 +78,11 @@
    color: #fff;
    border-radius: 0;
    font-size: 15px;
+
+   &:hover{
+      color: #fff;
+      background: rgba($color-red, 0.8);
+   }
   
    
    &.medium{
