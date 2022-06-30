@@ -11,11 +11,13 @@
 
    .navbar{
       .navbar-toggler{
-         i{
-            color: #000;
-            font-size: 25px;
-            @media(min-width: 768px){
-               font-size: 35px;
+         border: none;
+         img{
+            width: 100%;
+            max-width: 46px;
+
+            @media(max-width: 767px){
+               max-width: 30px;
             }
          }
 
@@ -26,14 +28,13 @@
       
       .nav-item{
          .nav-link{
-            font-family: "MyriadproRegular";
             font-size: 15px;
             color: #32314c;
             transition: all 0.2s ease-in-out;
             padding-inline: 26px;
             
             @media(max-width: 1399px){
-               padding-inline: 22px;
+               padding-inline: 19px;
             }
 
             &.pro{
@@ -127,6 +128,20 @@
    .header-bottom{
       background: #22223b;
       position: relative;
+
+      .container{
+         @media(max-width: 450px){
+            padding-inline: 5px;
+
+            ul{
+               li{
+                  a{
+                     font-size: 12px;
+                  }
+               }
+            }
+         }
+      }
 
       h2{
          text-align: center;
