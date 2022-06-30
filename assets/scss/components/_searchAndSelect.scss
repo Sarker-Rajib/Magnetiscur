@@ -1,69 +1,33 @@
 .search-banner{
-    padding: 80px 0;
+    padding: 85px 0 105px;
     background: url(../images/aaa.png) no-repeat center top/cover;
     text-align: center;
 
     @media(max-width: 1199px){
-        padding: 50px 0;
+        padding: 60px 0 75px;
     }
 
     @media(max-width: 767px){
-       padding: 35px 0;
+       padding: 30px 0;
     }
 
     .banner-body{
         padding: 40px 0;
         display: inline-block;
-        width: 80%;
+        width: 95%;
+        max-width: 890px;
         background: rgba(255, 255, 255, 0.85);
+
+        h2{
+            padding-bottom: 25px;
+        }
     
         @media(max-width: 767px){
             width: 95%;
             padding: 20px 0;
         }
+
     } 
-}
-
-
-.button-link-banner{
-    padding: 150px 20px 40px;
-    background: url(../images/aaa.png) no-repeat center top/cover;
-
-    .btn{
-        font-size: 15px;
-    }
-
-    @media(max-width: 1199px){
-        padding: 120px 20px 40px;
-    }
-    
-    @media(max-width: 767px){
-        background: #fff;
-        padding: 15px 0;
-    }
-}
-
-.country-select {
-    font-size: 0px;
-    line-height: 0px;
-}
-
-.country-list {
-    flex-direction: column;
-    width: 45px !important;
-    @media(min-width: 767px){
-        width: 50px !important;
-    }
-    .country {
-        margin: 0 !important;
-        width: 100%;
-    }
-}
-
-#country_selector {
-    height: 36px;
-    border: none;
-    padding-left: 40px;
 }
 
 .location-select{
@@ -72,6 +36,7 @@
 
     &.measured-width{
         width: 25%;
+        width: 520px;
 
         @media(max-width:767px){
             width: 60%;
@@ -83,6 +48,10 @@
     }
     
     .input-group{
+        padding: 2px 0 3px;
+        background: #fff;
+        border: 1px solid #e2e3e4;
+        
         .form-control{
             border: 0;
 
@@ -121,9 +90,14 @@
     }
 }
 
+
+
 .btn-red{
     &.search{
-        padding: 5px 10px;
+        padding: 6px 10px 5px;
+        font-size: 20px;
+
+        border: 1px solid #e2e3e4;
     }
 }
     
@@ -143,4 +117,57 @@
             border-radius: 0;
         }
     }
+}
+
+
+.button-link-banner{
+    padding: 185px 50px 20px;
+    background: url(../images/aaa.png) no-repeat center top/cover;
+
+    .btn{
+        font-size: 15px;
+    }
+
+    @media(max-width: 1199px){
+        padding: 100px 00px 15px;
+    }
+    
+    @media(max-width: 767px){
+        background: #fff;
+        padding: 15px 0;
+    }
+}
+
+.country-select {
+    font-size: 0px;
+    line-height: 0px;
+    border: 1px solid #e2e3e4;
+    height: 43px;
+    background: #fff;
+    border-radius: 3px;
+
+}
+
+.country-list {
+    flex-direction: column;
+    overflow-x: hidden;
+
+    @media(min-width: 767px){
+        width: 50px !important;
+    }
+
+    .country {
+        margin: 0 !important;
+        width: 100%;
+
+        .country-name{
+            display: none;
+        }
+    }
+}
+
+#country_selector {
+    height: 36px;
+    border: none;
+    padding-left: 40px;
 }

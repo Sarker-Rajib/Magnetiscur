@@ -1,13 +1,15 @@
 body {
-  font-family: "MyriadproRegular" , sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
+// g-recaptcha
 .g-recaptcha{
-  @media(max-width: 1600px){
-    transform:scale(0.85);
-    -webkit-transform:scale(0.85);
-    transform-origin:0 0;
-  }
+  // @media(max-width: 1600px){
+  //   transform:scale(0.85);
+  //   -webkit-transform:scale(0.85);
+  //   transform-origin:0 0;
+  // }
 
   @media(max-width: 1200px){
     transform:scale(0.65);
@@ -19,5 +21,62 @@ body {
     transform:scale(0.85);
     -webkit-transform:scale(0.85);
     transform-origin:0 0;
+  }
+}
+.container{
+  max-width: 1400px;
+}
+.profile{
+  .container{
+    max-width: 1400px;
+  }
+
+  .container-fluid{
+    width: 100%;
+    max-width: 1580px !important;
+
+    .profile-sided{
+      width: 21%;
+      padding: 0;
+
+      @media(max-width: 1199px){
+        width: 31.25%;
+      }
+
+      @media(max-width: 767px){
+        width: 100%;
+      }
+    }
+
+    .profile-main-content{
+      width: 79%;
+      max-width: 1260px;
+      padding: 0;
+
+      @media(max-width: 1199px){
+        width: 68.75%;
+      }
+
+      @media(max-width: 767px){
+        width: 100%;
+      }
+
+      .Deatailed-content{
+        width: 69.45%;
+
+        @media(max-width: 1199px){
+          width: 100%;
+        }
+      }
+
+      .contact-mail{
+        width: 30.55%;
+        padding: 20px;
+
+        @media(max-width: 1199px){
+          width: 0%;
+        }
+      }
+    }
   }
 }

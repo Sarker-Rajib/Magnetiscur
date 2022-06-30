@@ -1,13 +1,10 @@
-@font-face {
-   font-family: "MyriadproRegular";
-   src: url(../fonts/MYRIADPRO-REGULAR.woff);
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 
 
 h1, h2, h3, h4, h5, h6{
-   font-family: "MyriadproRegular";
+   font-family: 'Raleway', sans-serif;
    font-size: 25px;
-   font-weight: bold;
+   font-weight: 500;
 
    @media(max-width: 1200px){
       font-size: 20px;
@@ -19,10 +16,19 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{
-   font-family: "MyriadproRegular";
+   font-family: 'Raleway', sans-serif;
    font-size: 15px;
+   font-weight: 400;
 
    @media(max-width: 767px){
       font-size: 12px;
+   }
+}
+
+ul{
+   li{
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
    }
 }

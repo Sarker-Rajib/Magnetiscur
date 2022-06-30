@@ -1,8 +1,3 @@
-.pfofile{
-   .containe, .container-fluid{
-      overflow: hidden;
-   }
-}
 .profile-nav{
    background: #333359;
    padding: 0 15px;
@@ -28,18 +23,20 @@
 
 .contact-form{
    border: 1px solid #eeeeee;
-   padding: 8px;
+   padding: 10px;
    // max-width: 200px;
    margin-top: 5px;
    right: 15px;
    top: 15px;
-
+   width: 100%;
+   max-width: 345px;
 
    .header-top{
       background: #32314c;
       color: #fff;
       padding: 15px 5px;
       margin-bottom: 10px;
+      font-size: 15px;
    }
 
    .captcha-parent{

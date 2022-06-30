@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="profile">
   <!-- header -->
   <header class="header">
    <nav class="navbar navbar-expand-xl navbar-light">
      <div class="container">
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
+         <i class="fas fa-bars"></i>
        </button>
        <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/brand-icon.png" alt="image"></a>
        <div class="collapse mobile-nav navbar-collapse" id="nav-toggle">
@@ -61,7 +61,7 @@
    </nav>
    
    <div class="header-bottom">
-      <div class="container-fluid px-md-5">
+      <div class="container-fluid px-2 px-md-3 px-xl-5">
         <div class="row align-items-center py-2">
           <div class="col">      
             <a href="#" class="btn direction-btn"><i class="far fa-arrow-left"></i><span class="d-none d-md-inline-block">Back to Home</span></a>
@@ -120,7 +120,7 @@
   <div class="profile">
    <div class="container-fluid">
       <div class="row">
-         <div class="col-md-4 col-xl-3 col-xxl-2 px-0">
+         <div class="profile-sided">
             <div class="profile-nav h-100">
                <div class="top-section text-center pt-3 pb-2">
                   <div class="section-header text-center">
@@ -210,7 +210,7 @@
             </div>
          </div>
 
-         <div class="col-md-8 col-xl-9 col-xxl-10 px-0">
+         <div class="profile-main-content">
             <!--  -->
             <div class="button-link-banner">
                <div class="text-center text-md-end pe-md-4">
@@ -218,15 +218,16 @@
                      <i class="fas fa-envelope me-2"></i>Send Mail
                   </button>
                   
-                  <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdropmobile">
-                     <i class="fas fa-phone-alt me-2"></i>See Number
+                  <button type="button" class="btn btn-red">
+                     <i class="fas fa-phone-alt me-2"></i> <span onclick="this.innerHTML = '02.31.34.11.56'">See Number</span> 
                   </button>
                </div>
             </div>
             <!--  -->
-            <div class="row">
-               <div class="col-xl-9">
-                  <div class="container">
+
+            <div class="row px-4">
+               <div class="Deatailed-content">
+                  <div>
                      <div class="short-details">
                         <h1 class="section-header f-mr-25 text-center py-3">
                            Séverine Marthal Magnétiseur à Caen
@@ -286,8 +287,8 @@
                                           <i class="fas fa-envelope me-2"></i>Send Mail
                                        </button>
                                        
-                                       <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdropmobile">
-                                          <i class="fas fa-phone-alt me-2"></i>See Number
+                                       <button type="button" class="btn btn-red">
+                                          <i class="fas fa-phone-alt me-2"></i> <span onclick="this.innerHTML = '02.31.34.11.56'">See Number</span> 
                                        </button>
                                     </div>
                                  </div>
@@ -578,13 +579,13 @@
                   </div>
                </div>
       
-               <div class="col-xl-3 d-none d-xl-block">
+               <div class="contact-mail d-none d-xl-block">
                   <div class="get-contact sticky-top">
                      <div class="contact-form">
                         <h4 class="header-top text-center f-mr-15"><i class="far fa-envelope"></i> Contacter Severine Marthal </h4>
                      
                         <form>
-                           <div class="row">
+                           <div class="row  g-0">
                               <div class="mb-2 col-12">
                                  <input type="text" class="form-control" placeholder="Votre Nom et Prénom">
                               </div>
@@ -671,22 +672,6 @@
    </div>
  </div>
  <!-- /////////////////////////////////// -->
-
- <!-- see number ///////////// -->
- <div class="modal fade" id="staticBackdropmobile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropmobileLabel" aria-hidden="true">
-   
-   <div class="modal-dialog modal-dialog-centered">
-     <div class="modal-content">
-       <div class="modal-body bg-red text-center text-white f-mr-25 py-5">
-
-         02.31.34.11.56
-       </div>
-       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-     </div>
-   </div>
- </div>
- <!-- ////////////// -->
-
 
 
   <!-- footer starts -->

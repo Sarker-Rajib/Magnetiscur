@@ -10,14 +10,27 @@
    }
 
    .navbar{
+      .navbar-toggler{
+         i{
+            color: #000;
+            font-size: 25px;
+            @media(min-width: 768px){
+               font-size: 35px;
+            }
+         }
+
+         &:focus{
+            box-shadow: none;
+         }
+      }
+      
       .nav-item{
          .nav-link{
             font-family: "MyriadproRegular";
             font-size: 15px;
             color: #32314c;
             transition: all 0.2s ease-in-out;
-            padding-right: 25px;
-            padding-left: 25px;
+            padding-inline: 26px;
 
             &.pro{
                color: #ff4f4f;
@@ -42,8 +55,7 @@
             top: 100%;
             left: 0;
             width: 100%;
-            background: #ffffffdc;  
-            backdrop-filter: blur(2px);
+            background: #fffffff8;  
             border-bottom: 4px solid #ff4f4f;
             z-index: 999;
 
@@ -56,21 +68,54 @@
 
       .register{
          background: $color-red;
+         margin-left: 25px;
+
+         &:hover{
+            background: rgba($color-red, 0.8);
+         }
+
          
          a{
             display: inline-block;
-            padding: 10px;
+            padding: 9px;
+            font-size: 15px;
          }
-   
+         
          p{
-            font-family: "MyriadproRegular";
             font-size: 15px;
             color: #000;
+            padding-right: 15px;
+            margin-inline: 7px;
             
             span{
                color: #fff;
             }
-            
+         }
+         
+         img{
+            padding: 2px;
+            margin-inline: 5px;
+            max-width: 35px;
+         }
+
+         @media(max-width: 1199px){
+            margin-left: 0;
+            p{
+               padding-right: 0px;
+               margin-inline: 2px;
+               letter-spacing: -0.6px;
+            }
+
+            img{
+               padding: 0 !important;
+               margin-inline: 0px;
+            }
+         }
+
+         @media(max-width: 767px){
+            a{
+               padding: 2px;
+            }
          }
       }
    }
@@ -84,7 +129,7 @@
          color: #fff;
          font-family: "MyriadproRegular";
          font-size: 15px;
-
+         white-space: nowrap;
       }
 
       .direction-btn{
