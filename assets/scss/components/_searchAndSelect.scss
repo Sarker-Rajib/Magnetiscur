@@ -35,15 +35,15 @@
     width: 65%;
 
     &.measured-width{
-        width: 25%;
-        width: 520px;
-
-        @media(max-width:767px){
-            width: 60%;
-        }
+        width: 100%;
+        max-width: 460px;
 
         @media(max-width: 1199px){
-            width: 45%;
+            max-width: 405px;
+        }
+
+        @media(max-width:767px){
+            max-width: 202px;
         }
     }
     
@@ -145,26 +145,32 @@
     height: 43px;
     background: #fff;
     border-radius: 3px;
-
-}
-
-.country-list {
-    flex-direction: column;
-    overflow-x: hidden;
-
-    @media(min-width: 767px){
-        width: 50px !important;
-    }
-
-    .country {
-        margin: 0 !important;
-        width: 100%;
-
-        .country-name{
-            display: none;
+    
+    .country-list {
+        flex-direction: column;
+        overflow-x: hidden;
+        position: relative;
+        z-index: 999;
+    
+        @media(min-width: 767px){
+            width: 50px !important;
+        }
+    
+        .country {
+            margin: 0 !important;
+            width: 100%;
+            position: relative;
+            z-index: 999;
+            width: 100%;
+            display: block;
+    
+            .country-name{
+                display: none;
+            }
         }
     }
 }
+
 
 #country_selector {
     height: 36px;

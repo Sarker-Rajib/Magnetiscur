@@ -23,8 +23,12 @@ body {
     transform-origin:0 0;
   }
 }
-.container{
-  max-width: 1400px;
+
+
+@media(min-width: 1580px){
+  .container{
+    max-width: 1385px;
+  }
 }
 
 .pro-account{
@@ -34,12 +38,12 @@ body {
   }
 }
 
+
 .profile{
-  .container-fluid{
-    width: 100%;
+  .container{
     max-width: 1580px !important;
 
-    .profile-sided{
+    .col-md-2{
       width: 21%;
       padding: 0;
 
@@ -47,15 +51,16 @@ body {
         width: 31.25%;
       }
 
-      @media(max-width: 767px){
+        @media(max-width: 767px){
         width: 100%;
       }
     }
 
-    .profile-main-content{
+    .col-md-10{
       width: 79%;
-      max-width: 1260px;
+      max-width: 1250px;
       padding: 0;
+
 
       @media(max-width: 1199px){
         width: 68.75%;
@@ -65,22 +70,27 @@ body {
         width: 100%;
       }
 
-      .Deatailed-content{
-        width: 69.45%;
-
-        @media(max-width: 1199px){
-          width: 100%;
-        }
+      .col-xl-9{
+        width: 70%;
+        padding-left: 20px;
       }
 
-      .contact-mail{
-        width: 30.55%;
+      .col-xl-3{
+        width: 30%;
+        max-width: 405px;
         padding: 20px;
-
-        @media(max-width: 1199px){
-          width: 0%;
-        }
       }
-    }
+    }    
   }
 }
+
+
+
+
+
+    
+
+//         .contact-mail{
+//           width: 30%;
+//           padding: 0;
+//           max-width: 345px;

@@ -31,6 +31,10 @@
             color: #32314c;
             transition: all 0.2s ease-in-out;
             padding-inline: 26px;
+            
+            @media(max-width: 1399px){
+               padding-inline: 22px;
+            }
 
             &.pro{
                color: #ff4f4f;

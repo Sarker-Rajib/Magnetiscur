@@ -80,7 +80,7 @@
             border-radius: 0.25rem;
 
             &.Yellow-bg{
-               background: rgba(233, 226, 19, 0.22);
+               background: #fffcc8;
 
                .form-control, .input-group-text{
                   background: transparent
@@ -90,6 +90,13 @@
             .fa-eye{
                opacity: 0.6;
                cursor: pointer;
+            }
+         }
+
+         .sex{
+            .form-check{
+               display: flex;
+               align-items: center;
             }
          }
 
