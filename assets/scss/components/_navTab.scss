@@ -144,8 +144,8 @@
          }
 
          @media(min-width: 1366px){
-            transform:scale(0.72);
-            -webkit-transform:scale(0.72);
+            transform:scale(0.87);
+            -webkit-transform:scale(0.87);
             transform-origin:0 0;
          }
 
@@ -169,7 +169,11 @@
       }
 
       .btn-red{
-         @media(min-width: 1400px){
+         @media(min-width: 1350px){
+            margin-top: 10px;
+         }
+
+         @media(min-width: 1600px){
             margin-top: 15px;
          }
       }
